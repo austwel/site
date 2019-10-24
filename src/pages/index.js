@@ -9,6 +9,7 @@ import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
 import thumb03 from '../assets/images/thumbs/03.jpg'
 import thumb04 from '../assets/images/thumbs/04.jpg'
+import resume from '../assets/Resume.pdf'
 
 const DEFAULT_IMAGES = [
     { id: '1', href: 'https://github.com/austwel/KzarkaBot', thumbnail: thumb01, caption: 'KzarkaBot', description: 'Discord Bot made in Java'},
@@ -37,7 +38,7 @@ class HomeIndex extends React.Component {
                             <h2>Max Schulze, Software Developer</h2>
                         </header>
                         <ul className="actions">
-                            <li><a href="/Resume.pdf" className="button">View Resume</a></li>
+                            <li><a href={resume} type="application/pdf" className="button">View Resume</a></li>
                         </ul>
                     </section>
                     <section id="two">
